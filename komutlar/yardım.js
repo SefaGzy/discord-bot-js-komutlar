@@ -11,7 +11,6 @@ Kaplan Yardım Menüsü
 • /istatistik  :: Bot Istatistiligini Gosterir.
 • /sunucubilgi :: Sunucu Bilgisini Gosterir.
 • /yapimci     :: Bot Yapimcisini Gosterir.	
-• /duyurla     :: Bütün Üyelere Aynı Mesajı Atar.
 • /otorol      :: Gelen Kişilere Belirlenen Rolü verir.
 • /sunucu-kur1 :: Hazır Sunucu Kurulum Yapar.
 • /ban         :: İstediğiniz kişiyi sunucudan yasaklar.
