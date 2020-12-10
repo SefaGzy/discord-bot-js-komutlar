@@ -4,7 +4,11 @@ var green = process.env.NODE_DISABLE_COLORS ? '' : '\x1b[32m';
 
 require("moment-duration-format");
 
-exports.run = (client, msg) => {
+module.exports.run = (client, msg) => {
+  name: 'yardım',
+  description: 'Tüm komutları listeler. İsterseniz bir komut hakkında yardım eder..',
+  usage: 'yardım',
+
   const duration = moment.duration(client.uptime).format(" D [gün], H [saat], m [dakika], s [saniye]");
   msg.channel.sendCode("asciidoc", `⇝ Not:Komutlar "/" ile baslar
 Kaplan Yardım Menüsü	
@@ -15,17 +19,6 @@ Kaplan Yardım Menüsü
 • /sunucu-kur1 :: Hazır Sunucu Kurulum Yapar.
 • /ban         :: İstediğiniz kişiyi sunucudan yasaklar.
 • /avatar      :: İstediğiniz kişinin avatarını verir.`);
-};
+  };
 
-exports.conf = {
-  enabled: true,
-  guildOnly: false,
-  aliases: ['komutlar', 'help', 'yardim', 'yardım', 'kullanımlar', 'komutyardım', 'hp', 'ytr', 'sd', 'kd'],
-  permLevel: 0
-};
-
-exports.help = {
-  name: 'yardım',
-  description: 'Tüm komutları listeler. İsterseniz bir komut hakkında yardım eder..',
-  usage: 'yardım'
 };
